@@ -34,16 +34,16 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your Hourly H" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QTh-eb-Ovn" customClass="CurrencyTxtField" customModule="Window_shopper_app" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Item Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QTh-eb-Ovn" customClass="CurrencyTxtField" customModule="Window_shopper_app" customModuleProvider="target">
                                 <rect key="frame" x="20" y="225" width="335" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="hif-5D-Scs"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -58,11 +58,16 @@
                             <constraint firstItem="QTh-eb-Ovn" firstAttribute="leading" secondItem="W3a-Je-eps" secondAttribute="leading" id="qny-Gw-zVj"/>
                             <constraint firstItem="IDm-BI-cAk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wDI-Hd-auC"/>
                             <constraint firstItem="IDm-BI-cAk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wfI-X6-h4B"/>
+                            <constraint firstItem="QTh-eb-Ovn" firstAttribute="height" secondItem="W3a-Je-eps" secondAttribute="height" id="ytf-oH-nmQ"/>
                             <constraint firstItem="TBa-Z2-sC5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="z2n-jO-nMq"/>
                             <constraint firstItem="QTh-eb-Ovn" firstAttribute="top" secondItem="W3a-Je-eps" secondAttribute="bottom" constant="30" id="zcJ-7y-Rdq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="price" destination="QTh-eb-Ovn" id="RYK-oc-geb"/>
+                        <outlet property="wageTxt" destination="W3a-Je-eps" id="0EV-AV-Ucz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
